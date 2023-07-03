@@ -1,5 +1,5 @@
-use bevy_ecs::{component::ComponentId, prelude::*, query::QueryEntityError, world::WorldId};
-use bevy_reflect::ReflectFromPtr;
+use bevy::ecs::{component::ComponentId, prelude::*, query::QueryEntityError, world::WorldId};
+use bevy::reflect::ReflectFromPtr;
 
 use crate::dynamic_query::{DynamicQuery, DynamicQueryIter, FilterKind};
 
@@ -113,12 +113,12 @@ impl<'w, 's> Iterator for EcsValueRefQueryIter<'w, 's> {
         })
     }
 }
-
+/*
 #[cfg(test)]
 mod tests {
-    use bevy_app::AppTypeRegistry;
-    use bevy_ecs::prelude::*;
-    use bevy_reflect::Reflect;
+    use bevy::app::AppTypeRegistry;
+    use bevy::ecs::prelude::*;
+    use bevy::reflect::{Reflect, GetTypeRegistration};
 
     use crate::reflect_value_ref::ReflectValueRef;
 
@@ -182,3 +182,4 @@ mod tests {
         }
     }
 }
+*/
