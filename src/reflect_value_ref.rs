@@ -4,12 +4,12 @@ use std::cell::RefCell;
 use std::ops::{Deref, DerefMut};
 use std::rc::Rc;
 
-use bevy::app::AppTypeRegistry;
-use bevy::ecs::component::ComponentId;
-use bevy::ecs::prelude::*;
-use bevy::ecs::ptr::Ptr;
-use bevy::ecs::{change_detection::MutUntyped, world::WorldId};
-use bevy::reflect::{GetPath, Reflect, ReflectFromPtr};
+use bevy_app::AppTypeRegistry;
+use bevy_ecs::component::ComponentId;
+use bevy_ecs::prelude::*;
+use bevy_ecs::ptr::Ptr;
+use bevy_ecs::{change_detection::MutUntyped, world::WorldId};
+use bevy_reflect::{GetPath, Reflect, ReflectFromPtr};
 
 pub mod query;
 
